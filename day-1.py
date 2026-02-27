@@ -66,6 +66,8 @@ print(f"Last match in {team} and {winner}") # using fstring
 # f string gretting
 name = "John"
 date = datetime.now()
+# date = datetime.now().strftime("%d-%m-%Y")
+
 print(f"Hello Good Evening! My name is {name}. Today is {date} now.")
 
 # Count vowels

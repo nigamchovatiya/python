@@ -43,9 +43,10 @@ def phonebook_search(name: string, contacts: list) -> dict:
  
         Args :
             name (string) : takes name as input from user
+            contacts (list) : list all contacts .
  
         Returns :
-            contacts (list) : list all contacts .
+            dict : matched record.
     """
  
     print("Here is detail of ", name)

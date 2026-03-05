@@ -49,7 +49,7 @@ def addition(first_number, second_number) -> int:
  
 def substraction(first_number, second_number) -> int:
     """
-    This performs addition of two numbers and returns the
+    This performs substraction of two numbers and returns the
     result
  
     Args:
@@ -57,7 +57,7 @@ def substraction(first_number, second_number) -> int:
         second_number(int) : Second operand
  
     Returns:
-        Result after performing addition on both operands
+        Result after performing substraction on both operands
     """
  
     result = second_number - first_number
@@ -68,7 +68,7 @@ def substraction(first_number, second_number) -> int:
  
 def multiplication(first_number, second_number) -> int:
     """
-    This performs addition of two numbers and returns the
+    This performs multiplication of two numbers and returns the
     result
  
     Args:
@@ -76,7 +76,7 @@ def multiplication(first_number, second_number) -> int:
         second_number(int) : Second operand
  
     Returns:
-        Result after performing addition on both operands
+        Result after performing multiplication on both operands
     """
  
     result = first_number * second_number
@@ -87,7 +87,7 @@ def multiplication(first_number, second_number) -> int:
  
 def division(first_number, second_number) -> float:
     """
-    This performs addition of two numbers and returns the
+    This performs division of two numbers and returns the
     result
  
     Args:
@@ -95,7 +95,7 @@ def division(first_number, second_number) -> float:
         second_number(int) : Second operand
  
     Returns:
-        Result after performing addition on both operands
+        Result after performing division on both operands
     """
  
     result = first_number / second_number
@@ -106,7 +106,7 @@ def division(first_number, second_number) -> float:
  
 def modulos(first_number, second_number) -> int:
     """
-    This performs addition of two numbers and returns the
+    This performs modulos of two numbers and returns the
     result
  
     Args:
@@ -114,7 +114,7 @@ def modulos(first_number, second_number) -> int:
         second_number(int) : Second operand
  
     Returns:
-        Result after performing addition on both operands
+        Result after performing modulos on both operands
     """
  
     remainder = first_number % second_number
@@ -125,7 +125,7 @@ def modulos(first_number, second_number) -> int:
  
 def power(first_number, second_number) -> int:
     """
-    This performs addition of two numbers and returns the
+    This performs power of two numbers and returns the
     result
  
     Args:
@@ -133,7 +133,7 @@ def power(first_number, second_number) -> int:
         second_number(int) : Second operand
  
     Returns:
-        Result after performing addition on both operands
+        Result after performing power on both operands
     """
  
     result = first_number ** second_number
@@ -144,14 +144,14 @@ def power(first_number, second_number) -> int:
  
 def square_root(number: int) -> int:
     """
-    This performs Square root of given numbers and returns the
-    result
+    This performs Square square_root of given numbers and 
+    returns the result
  
     Args:
         number(int) : First operand
  
     Returns:
-        Result after doing square root of number
+        Result after doing square square_root of number
     """
  
     result = math.sqrt(number)

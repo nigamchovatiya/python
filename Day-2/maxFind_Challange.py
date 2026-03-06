@@ -19,6 +19,7 @@ for mark in marks:
 
     elif mark > second:
         second = mark
+        
     elif mark > third:
         third = mark
 

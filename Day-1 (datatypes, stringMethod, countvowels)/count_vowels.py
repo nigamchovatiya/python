@@ -3,6 +3,7 @@
 char = "nigam Ae"
 vowel = "aeiouAEIOU"
 count = 0
+
 for n in char:
     if n in vowel:
         count = count + 1

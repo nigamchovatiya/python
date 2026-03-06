@@ -7,10 +7,10 @@ while i <= 4:
     print(i)
     i += 1  # 0 1 2 3 4
 
-range(start, stop, step)
-range(5) 0 to 4
-range(1, 3) 1 to 3
-range(1, 8, 2) 1, 3, 5, 7
+# range(start, stop, step)
+range(5) # 0 to 4
+range(1, 3) # 1 to 3
+range(1, 8, 2) # 1, 3, 5, 7
 
 
 fruits = ['apple', 'banana', 'orange']

@@ -1,4 +1,4 @@
-import random
+# import random
 
 
 def game_random(attempts: int, a: int, b: int) -> None:

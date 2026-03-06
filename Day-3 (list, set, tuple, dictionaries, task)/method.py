@@ -8,7 +8,7 @@ dict2 = {
 }
 
 print(dict2.get("marks"))  # 90
-get fetch data safer method if not data return none instead of error
+# get fetch data safer method if not data return none instead of error
 
 print(dict2.items())  # return key-value pair
 

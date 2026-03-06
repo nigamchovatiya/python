@@ -120,6 +120,7 @@ def main() -> None:
         if c == 0:
             print("Thank You , for using phonebook .")
             break
+        
         elif c == 1:
             phonebook_list(contacts)
  

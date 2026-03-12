@@ -11,7 +11,7 @@ print(dict1)
 print(dict1["name"])
 print(dict1["course"])
 print(dict1.get("age"))
-print(dict1["city"])  # error
+# print(dict1["city"])  # error
 print(dict1.get("city"))  # return none
 
 # update

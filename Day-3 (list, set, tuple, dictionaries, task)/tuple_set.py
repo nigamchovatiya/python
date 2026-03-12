@@ -7,7 +7,8 @@ print(t1[0])  # nigam
 t1[0] = "Chovatiya"
 print(t1)  # error can't modify
 
-# ---------------------- set-------------
+# ---------------------- set-----------------
+
 s1 = {1, 2, 3, 4, 5, 6, 1, 2, 3}
 print(s1)  # 1,2,3,4,5,6 (remove duplicates & automatically order set)
 

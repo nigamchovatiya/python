@@ -26,9 +26,15 @@ class BankAccount:
     def get_balanace(self) -> str:
         """Total balance from account."""
         return f"{self.currentbalance} total balance in your account."
+    
+    def __str__(self) -> str:
+        return "this is object representation."
+
 
 user1 = BankAccount(100000)
 user2 = BankAccount(50000)
+
+print(user1) # this is object representation.
 
 print("--------User1 BankAccount--------")
 print(user1.get_balanace()) # 100000
@@ -41,4 +47,4 @@ print(user2.get_balanace()) # 50000
 print(user2.deposit(20000)) # +20000
 print(user2.withdraw(10000)) # -10000
 print(user2.get_balanace()) # 60000
-                
+ 

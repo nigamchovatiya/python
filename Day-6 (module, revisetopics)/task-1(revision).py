@@ -1,3 +1,4 @@
+# data types ----------------------------
 var_a = 25
 var_b = 25.8
 name = "john"
@@ -8,6 +9,8 @@ print(type(var_b))
 print(name)
 print(type(status))
 
+
+# if-elif -----------------------------------
 
 age = 21
 id_status = False
@@ -25,6 +28,8 @@ else:
     print("you can't eligible.")
 
 
+# list -----------------------------------
+
 user_list = ['nigam', 1, True]
 print(user_list[0])
 
@@ -33,10 +38,16 @@ print(user_list)
 print(user_list[::2])
 print(user_list[1:])
 
+
+# tuple ---------------------------------
+
 user_detail = ('john', 21, 95)
 print(user_detail)
 # user_detail(0) == 'dor' # typeError 
 print(user_detail[2])
+
+
+# set -----------------------------------
 
 marks = {1, 2, 3, 4, 5, 2, 3, 4, 5, 1}
 marks2 = {4, 5, 6 ,8}
@@ -45,6 +56,8 @@ print(marks | marks2) # union
 print(marks & marks2) # intersetion
 print(marks - marks2) # diffrence
 
+
+# dictionary --------------------------------
 
 user_info = {
     "student1": {
@@ -63,6 +76,8 @@ print(user_info["student1"]["name"]) # john
 print(user_info["student2"]["marks"]) # 92
 
 
+# function ------------------------------------
+
 def addition(a, b):
     print("addition of two number is:", a + b)
 
@@ -75,6 +90,8 @@ def user_name(name = "Default"):
 user_name("jay") # jay   
 user_name() # default parameter   
 
+
+# star patter ----------------------------------
 
 n = 5
 for i in range(n):

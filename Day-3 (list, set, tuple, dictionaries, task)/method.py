@@ -15,6 +15,7 @@ print(dict2.items())  # return key-value pair
 print(dict2.keys())  # get key only
 print(dict2.values())  # get value only
 
+
 # --------------------dictionary comprenhensive-------------------
 dict2 = [1, 2, 3, 4]
 

@@ -3,7 +3,7 @@ from functools import reduce
 
 
 # Lambda function 
-# anonymous function - (function withou name)
+# anonymous function - (function without name)
 
 num_add = lambda a, b: a + b
 print(num_add(2,3))  # 5
@@ -35,7 +35,7 @@ num = [22 ,12 ,4 ,5 ,1]
 asce_num = sorted(num)
 print(asce_num) # [1,4,5,12,22] Asce
 
-desc_num = sorted(num, reverse=True)
+desc_num = sorted(num, reverse = True)
 print(desc_num) # [22,12,5,4,1] Desc
 
 

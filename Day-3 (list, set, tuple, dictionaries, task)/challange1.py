@@ -5,6 +5,9 @@ print("duplicate list = ", dup_list)
 new_set = list(set(dup_list))
 print("new list = ", new_set)  # remove duplicates
 
+
+# print duplicate name in list
+
 names = ['Nigam', 'John', 'Doe', 'Nigam', 'John']
 original = set()
 duplicate = set()

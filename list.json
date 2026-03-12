@@ -1,0 +1,9 @@
+{
+    "name": "user1",
+    "userid": 12,
+    "contact": 9874561230,
+    "skill": [
+        "cricket",
+        "hockey"
+    ]
+}

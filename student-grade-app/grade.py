@@ -15,6 +15,7 @@ class Grade:
 
     @staticmethod
     def grade_calculator(marks: int) -> str:
+        """grade given according to marks"""
 
         """
         Args:
@@ -24,15 +25,21 @@ class Grade:
             str : return grade.
         """
 
-        if marks >= 90:
+        if marks >= 97:
             return "A+"
-        elif marks >= 80:
+        elif marks >= 93:
             return "A"
-        elif marks >= 70:
+        elif marks >= 90:
+            return "A-"
+        elif marks >= 88:
+            return "B+"
+        elif marks >= 83:
             return "B"
-        elif marks >= 50:
+        elif marks >= 80:
+            return "B-"
+        elif marks >= 75:
             return "C"
-        elif marks >= 35:
+        elif marks >= 65:
             return "D"
         else:
             return "F"
@@ -40,6 +47,7 @@ class Grade:
 
     @staticmethod
     def grade_gpa(grade: str) -> int:
+        """gpa given according to grade"""
 
         """
         Args:
@@ -51,11 +59,14 @@ class Grade:
 
         # dictionary store grade, gpa
         grade_dict = {
-            "A+" : 10,
-            "A" : 9,
-            "B" : 8,
-            "C" : 7,
-            "D" : 6,
+            "A+" : 4.0,
+            "A" : 4.0,
+            "A-" : 3.7,
+            "B+" : 3.3,
+            "B" : 3.0,
+            "B-" : 2.7,
+            "C" : 2.0,
+            "D" : 1.2,
             "F" : 0
         }
 

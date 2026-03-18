@@ -39,6 +39,14 @@ class Student:
     def cal_avg(self) -> float:
         """calculate average marks"""
 
+        """
+        Args:
+            None
+
+        Return:
+            float : Return avrage.   
+        """
+
         # marks take
         total = sum(self.student_subject.values())
         # total subject
@@ -53,12 +61,28 @@ class Student:
     def cal_grade(self) -> str:
         """calculate grade based on average"""
 
+        """
+        Args:
+            None
+
+        Return:
+            Str : Return grade.    
+        """
+
         avg = self.cal_avg()
         return Grade.grade_calculator(avg)
 
 
     def cal_gpa(self) -> int:
         """calculate GPA"""
+
+        """
+        Args:
+            None
+
+        Return:
+            Int : Return gpa number.    
+        """
 
         grade = self.cal_grade()
         return Grade.grade_gpa(grade)

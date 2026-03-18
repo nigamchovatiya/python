@@ -126,7 +126,7 @@ def main() -> None:
  
         elif c == 2:
             name = input("Please Enter your name : ")
-            number = input("Please Enter your name : ")
+            number = input("Please Enter your number : ")
             phonebook_add(name, number, contacts)
  
         elif c == 3:

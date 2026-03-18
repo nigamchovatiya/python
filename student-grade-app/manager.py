@@ -28,6 +28,8 @@ class StudentManager:
                 student_section: str,
                 student_subject: dict) -> None:
         
+        """add student in list"""
+        
         """
         Args:
             student_id(int) : take a id from student
@@ -43,12 +45,15 @@ class StudentManager:
                         student_section, student_subject) 
 
         self.students.append(student)
+
         self.save_json() # save data in json file
         print("record added successfully.")
+        
 
 
     # list record function
     def liststudent(self) -> None:
+        """print list of student"""
 
         """
         Args:
@@ -83,6 +88,7 @@ class StudentManager:
 
     # search record function
     def searchstudent(self, student_id: int) -> None:
+        """search student based on id"""
 
         """
         Args: 
@@ -110,11 +116,12 @@ class StudentManager:
 
                 return 
             
-        print("Student not found..")
+        print("Student id not found..")
 
 
     # delete record function
     def deletestudent(self, student_id: int) -> None:
+        """delete student based on id"""
 
         """
         Args: 
@@ -128,14 +135,15 @@ class StudentManager:
             if s.student_id == student_id:
                 self.students.remove(s)    
                 self.save_json() # update json file
-                print("student deleted..")
+                print("Student deleted..")
                 return
             
-        print("Student not found..")    
+        print("Student id not found..")    
 
 
     # save data in json file
-    def save_json(self):
+    def save_json(self) -> None:
+        """store data in json file"""
 
         """
         Args:
@@ -163,8 +171,52 @@ class StudentManager:
             with open("student.json", 'w') as file:
                 json.dump(data, file, indent=4)
 
-            print("data saved in student.json file") 
+            print("Data saved in student.json file") 
               
         except Exception as e:
             print("Error time of save file.") 
   
+
+    # top performer gpa above 3.5
+    def top_performer(self) -> None:
+        """print top performer student gpa > 3.5"""
+
+        """
+        Args: 
+            None
+
+        Return:
+            None    
+        """
+        # record empty  
+        if not self.students:
+            print("Record are not found.")
+            return
+
+        
+        found = False
+
+        # check students list 
+        for s in self.students:
+            # gpa > 3.5
+            if s.cal_gpa() > 3.5:
+                found = True
+
+                print(
+                    f"Id: {s.student_id}, Name: {s.student_name}, "
+                    f"Section: {s.student_section}"
+                )
+
+                print("Subjects & Marks:")
+
+                for sub, marks in s.student_subject.items():
+                    print(f"  {sub}: {marks}")
+
+                print(
+                    f"Average: {s.cal_avg():.2f}, "
+                    f"Grade: {s.cal_grade()}, GPA: {s.cal_gpa()}"
+                )
+
+        if not found:
+            print("Not top performer found in list.")
+        

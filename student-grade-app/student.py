@@ -58,21 +58,6 @@ class Student:
             return 0
 
 
-    def cal_grade(self) -> str:
-        """calculate grade based on average"""
-
-        """
-        Args:
-            None
-
-        Return:
-            Str : Return grade.    
-        """
-
-        avg = self.cal_avg()
-        return Grade.grade_calculator(avg)
-
-
     def cal_gpa(self) -> int:
         """calculate GPA"""
 
@@ -84,5 +69,27 @@ class Student:
             Int : Return gpa number.    
         """
 
-        grade = self.cal_grade()
-        return Grade.grade_gpa(grade)
+        # avg function call, avg store
+        avg = self.cal_avg()
+
+        # gpa formula calulate gpa
+        gpa = (avg / 100) * 4
+        return f"{gpa:.2f}"
+    
+    
+    def cal_grade(self) -> str:
+        """calculate grade based on average"""
+
+        """
+        Args:
+            None
+
+        Return:
+            Str : Return gpa.    
+        """
+       
+        # gpa function call, gpa store
+        gpa = float(self.cal_gpa())
+
+        # return grade_calculator gpa
+        return Grade.grade_calculator(gpa)

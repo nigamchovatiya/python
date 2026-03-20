@@ -1,14 +1,24 @@
 [
     {
-        "id": 101,
-        "name": "John",
-        "section": "10A",
+        "id": 1,
+        "name": "Alice",
+        "section": "A",
         "subjects": {
-            "english": 95,
-            "math": 85
+            "maths": 95
         },
-        "average": 90.0,
-        "grade": "A-",
-        "gpa": 3.7
+        "average": 95.0,
+        "grade": "A",
+        "gpa": "3.80"
+    },
+    {
+        "id": 2,
+        "name": "John",
+        "section": "B",
+        "subjects": {
+            "maths": 70
+        },
+        "average": 70.0,
+        "grade": "C",
+        "gpa": "2.80"
     }
 ]

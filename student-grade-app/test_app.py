@@ -24,18 +24,18 @@ def test_cal_avg() -> None:
     assert s.cal_avg() == 85
 
 
+def test_cal_gpa() -> None:
+    """test cal_gpa() function"""
+
+    s = Student(3, "alice", "A", {"maths": 95})
+    assert s.cal_gpa() == "3.80" 
+
+
 def test_cal_grade() -> None:
     """test cal_grade() function"""
 
     s = Student(2, "john", "B", {"maths": 95})
     assert s.cal_grade() == "A"
-
-
-def test_cal_gpa() -> None:
-    """test cal_gpa() function"""
-
-    s = Student(3, "alice", "A", {"maths": 95})
-    assert s.cal_gpa() == 4.0        
 
 
 # ------------------------------------------------
@@ -46,14 +46,7 @@ def test_grade_calculator() -> None:
     """test grade_calculator() function"""
 
     g = Grade()
-    assert g.grade_calculator(90) == "A-"
-
-
-def test_grade_gpa() -> None:
-    """test grade_gpa() function"""
-
-    g = Grade()
-    assert g.grade_gpa("B") == 3.0    
+    assert g.grade_calculator(3.5) == "A"
 
 
 # -------------------------------------------------
@@ -94,6 +87,14 @@ def test_liststudent(manager, capsys) -> None:
 
     # check john in capture data
     assert "john" in captured.out
+
+
+# liststudent negative test 
+def test_not_liststudent(manager, capsys) -> None:
+    manager.addstudent(1, "doe", "B", {"maths": 95})
+    manager.liststudent()
+    captured = capsys.readouterr()
+    assert "john" not in captured.out    
 
 
 # search student test
@@ -142,6 +143,7 @@ def test_top_performer(manager, capsys) -> None:
 
     # check highest scoring student
     assert "Alice" in captured.out   
+
 
 
 

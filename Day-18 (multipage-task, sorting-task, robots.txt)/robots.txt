@@ -1,0 +1,34 @@
+"here i paste a robots.txt file of examples.com site"
+
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /comments/(.*)
+Disallow: /feed/(.*)
+Disallow: /trackback/
+Disallow: /downloads/
+Disallow: /author/
+Disallow: /bulk-related/
+Disallow: /search/
+Disallow: /?attachment_id=(.*)
+Disallow: /404-2/
+Disallow: /publish/
+Disallow: /login/
+Disallow: /assets/
+Disallow: /?search=/
+Disallow: /auth/googleV2
+Disallow: /account/
+Disallow: /mepr/
+Disallow: /membership-account/
+Disallow: /membership-confirmation/
+Disallow: /membership-checkout/
+Disallow: /membership-invoice/
+Disallow: /*?action=mepr
+Disallow: /*?mepr_transaction_id=
+Disallow: /*?meprmembership=
+Disallow: /*?meprcoupon=
+Disallow: /*?mepr_payment_method=
+Disallow: /*?mepr-unauth-page=
+Allow: /wp-content/uploads/
+Sitemap: https://www.examples.com/sitemap_index.xml

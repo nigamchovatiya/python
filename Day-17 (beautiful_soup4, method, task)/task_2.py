@@ -35,7 +35,6 @@ for i in range(1,3):
         # rating_class = ['star-rating', 'three]
         rating = rating_class[1] # three
         
-
         # print
         print(f"{index}. {title}")
         print(f"  Price: {price}")

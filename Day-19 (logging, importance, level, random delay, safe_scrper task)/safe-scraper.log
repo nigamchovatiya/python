@@ -1,0 +1,17 @@
+2026-03-26 16:14:14,058 - INFO - scraper started
+2026-03-26 16:14:14,059 - INFO - Scraping url start
+2026-03-26 16:14:14,059 - INFO - Sleeping for 2.02 seconds
+2026-03-26 16:14:18,019 - INFO - Page fetched successfully.
+2026-03-26 16:14:18,039 - INFO - Found 20 books
+2026-03-26 16:14:18,044 - INFO - Scraping url finished
+2026-03-26 16:14:18,044 - INFO - Scraping url start
+2026-03-26 16:14:18,044 - INFO - Sleeping for 2.00 seconds
+2026-03-26 16:14:20,996 - INFO - Page fetched successfully.
+2026-03-26 16:14:21,016 - INFO - Found 20 books
+2026-03-26 16:14:21,020 - INFO - Scraping url finished
+2026-03-26 16:14:21,020 - INFO - Scraping url start
+2026-03-26 16:14:21,020 - INFO - Sleeping for 1.97 seconds
+2026-03-26 16:14:23,978 - INFO - Page fetched successfully.
+2026-03-26 16:14:23,998 - INFO - Found 20 books
+2026-03-26 16:14:24,002 - INFO - Scraping url finished
+2026-03-26 16:14:24,003 - INFO - scraper finished

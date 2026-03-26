@@ -1,0 +1,15 @@
+2026-03-26 10:40:46,309 - INFO - scraper started
+2026-03-26 10:40:47,515 - INFO - Page fetched successfully.
+2026-03-26 10:40:47,516 - CRITICAL - Fatal error: name 'Beautifulsoup' is not defined
+2026-03-26 10:41:25,265 - INFO - scraper started
+2026-03-26 10:41:26,230 - INFO - Page fetched successfully.
+2026-03-26 10:41:26,263 - INFO - Found 20 books
+2026-03-26 10:41:26,268 - INFO - scraper finished
+2026-03-26 10:57:59,566 - INFO - scraper started
+2026-03-26 10:58:00,607 - INFO - Page fetched successfully.
+2026-03-26 10:58:00,632 - INFO - Found 20 books
+2026-03-26 10:58:00,637 - INFO - scraper finished
+2026-03-26 12:30:54,975 - INFO - scraper started
+2026-03-26 12:30:56,236 - INFO - Page fetched successfully.
+2026-03-26 12:30:56,302 - INFO - Found 20 books
+2026-03-26 12:30:56,304 - INFO - scraper finished

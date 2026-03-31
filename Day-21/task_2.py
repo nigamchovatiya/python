@@ -1,8 +1,8 @@
 """
-here i scrape a total country and print name,
+here i scrape a total country name and print,
 find country with highest population, and 
 filter under 1 million population country and 
-print in a csv file. 
+print in all output in csv file. 
 """
 
 
@@ -39,7 +39,7 @@ driver.execute_script("arguments[0].scrollIntoView();", countries [0])
 for country in countries :
     print("Country:" ,country.text) # country print
  
-total = len(countries )
+total = len(countries)
 print(total) # 250
  
  
